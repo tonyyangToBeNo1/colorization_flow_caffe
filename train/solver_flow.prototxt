@@ -1,0 +1,34 @@
+net: "/media/Disk/ziyang/code/colorization/models/colorization_flow.prototxt"
+#test_iter: 1 # number of iterations per step
+#test_interval: 10000000 # never test
+#test_initialization: False # don't run validation when loading
+#base_lr: 1e-3
+
+#base_lr: 3.16e-3
+#lr_policy: "step"
+#gamma: 0.316
+#stepsize: 4000
+#display: 50
+#max_iter: 10000
+#momentum: 0.9
+#momentum2: 0.99
+#weight_decay: 0.001
+#snapshot: 2000
+#snapshot_prefix: "/media/Disk/ziyang/code/colorization/train/models/flow_warp_small"
+#solver_mode: GPU
+#type: "Adam"
+#average_loss: 1000
+
+
+base_lr: 1e-4
+lr_policy: "step"
+gamma: 0.25
+weight_decay: 0.005
+stepsize: 50000
+max_iter: 20000
+momentum: 0.9
+#power: 0.75
+display: 50
+solver_mode: GPU
+snapshot: 2000
+snapshot_prefix: "/media/Disk/ziyang/code/colorization/train/models/flow_warp_small"
